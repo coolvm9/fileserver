@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc9e5e0e-5cea-4577-89cf-3a46f3595ed0" name="Changes" comment="" />
+    <list default="true" id="cc9e5e0e-5cea-4577-89cf-3a46f3595ed0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/insightum/FileClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/cleanfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/insightum/FileServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/insightum/FileServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/resources/simplelogger.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/simplelogger.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,10 +29,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2bukCrOLwCkMdbNFDqIHEBliejf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +49,7 @@
     "ACTIVE_CLOUD_PROJECT_NUMBER": "13092500545",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.google.cloudcode.ide_session_index": "20240204_0001",
+    "com.google.cloudcode.ide_session_index": "20240205_0002",
     "last_opened_file_path": "/Users/satyaanumolu/POCs/fileserver/app/src/test/resources"
   }
 }]]></component>
@@ -46,11 +57,18 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/test/resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.insightum" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="FileServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.insightum.FileServer" />
+  <component name="RunManager" selected="Application.com.insightum.FileClient">
+    <configuration name="com.insightum.FileClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.insightum.FileClient" />
       <module name="fileserver.app.main" />
+      <option name="PROGRAM_PARAMETERS" value="localhost 5052 $PROJECT_DIR$/app/src/main/resources/test.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.insightum.*" />
@@ -61,9 +79,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.insightum.FileServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.insightum.FileServer" />
+      <module name="fileserver.app.main" />
+      <option name="PROGRAM_PARAMETERS" value="5052" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.insightum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.com.insightum.FileClient" />
+      <item itemvalue="Application.com.insightum.FileServer" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FileServer" />
+        <item itemvalue="Application.com.insightum.FileClient" />
+        <item itemvalue="Application.com.insightum.FileServer" />
       </list>
     </recent_temporary>
   </component>
@@ -77,5 +114,32 @@
       <updated>1707072226744</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/insightum/FileServer.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/insightum/FileClient.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -36,22 +36,35 @@ java {
     }
 }
 
-application {
-    // Define the main class for the application.
-    mainClass = 'com.insightum.FileServer'
+task runServer(type: JavaExec) {
+    mainClass = 'com.insightum.FileServer' // Replace with your server's fully qualified name
+    classpath = sourceSets.main.runtimeClasspath
+    standardOutput = System.out
+    errorOutput = System.err
+
+    // Conditionally set arguments if they are provided
+    if (project.hasProperty('appArgs')) {
+        args project.appArgs.split(',')
+    }
+
 }
 
-application {
-    // Define a default argument list for the 'run' task
-    applicationDefaultJvmArgs = ['-Dsome.property=default']
+task runClient(type: JavaExec) {
+    mainClass = 'com.insightum.FileClient' // Use the fully qualified main class name of your client
+    classpath = sourceSets.main.runtimeClasspath
 
-    // Using the 'run' task to pass application arguments
-    run {
-        if (project.hasProperty('appArgs')) {
-            args Eval.me(appArgs)
+    // Ensure 'appArgs' property is provided for client arguments
+    if (project.hasProperty('appArgs')) {
+        args project.appArgs.split(',')
+    } else {
+        doFirst {
+            throw new GradleException("Client requires arguments: <host> <port> <file-path>")
         }
     }
 }
+
+
+
 
 
 tasks.named('test') {
